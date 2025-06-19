@@ -448,8 +448,8 @@
             });
             const [pendingContent, setPendingContent] = useState([]);
             const [platforms, setPlatforms] = useState([
-                { id: 'shutterstock', name: 'Shutterstock', type: 'images', revenue: 234.56, uploads: 45, icon: 'fas fa-camera' },
-                { id: 'freesound', name: 'Freesound', type: 'audio', revenue: 123.45, uploads: 23, icon: 'fas fa-music' },
+                { id: 'twitch', name: 'Twitch', type: 'streaming', revenue: 432.10, uploads: 28, icon: 'fab fa-twitch' },
+                { id: 'youtube', name: 'YouTube', type: 'video', revenue: 678.90, uploads: 35, icon: 'fab fa-youtube' },
                 { id: 'fiverr', name: 'Fiverr', type: 'services', revenue: 567.89, uploads: 12, icon: 'fas fa-briefcase' },
                 { id: 'etsy', name: 'Etsy', type: 'digital', revenue: 345.67, uploads: 34, icon: 'fas fa-store' }
             ]);
@@ -571,7 +571,7 @@
                         type: 'image',
                         title: prompt,
                         preview: result.url,
-                        platforms: ['shutterstock', 'etsy'],
+                        platforms: ['youtube', 'etsy'],
                         tags: ['digital art', 'stock photo', 'creative']
                     };
                 } catch (error) {
@@ -601,7 +601,7 @@
                         type: 'audio',
                         title: text,
                         preview: result.url,
-                        platforms: ['freesound', 'fiverr'],
+                        platforms: ['twitch', 'fiverr'],
                         tags: ['audio', 'music', 'sound effect']
                     };
                 } catch (error) {
